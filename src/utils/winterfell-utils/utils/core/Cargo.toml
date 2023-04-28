@@ -1,5 +1,5 @@
 [package]
-name = "winter-utils"
+name = "winter-utils-04"
 version = "0.4.0"
 description = "Utilities for the Winterfell STARK prover/verifier"
 authors = ["winterfell contributors"]

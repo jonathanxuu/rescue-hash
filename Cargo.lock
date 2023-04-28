@@ -161,11 +161,11 @@ name = "rescue"
 version = "0.1.0"
 dependencies = [
  "rescue-prime-optimized",
- "sp-std 4.0.0-dev",
+ "sp-std",
  "wasm-bindgen",
- "winter-crypto 0.4.0",
- "winter-math 0.4.0",
- "winter-utils 0.4.0",
+ "winter-crypto-04",
+ "winter-math-04",
+ "winter-utils-04",
 ]
 
 [[package]]
@@ -175,12 +175,12 @@ source = "git+https://github.com/jonathanxuu/RescuePrimeOptimiezd.git#93e320fa1a
 dependencies = [
  "blake3",
  "console_error_panic_hook",
- "sp-std 5.0.0",
+ "sp-std",
  "wasm-bindgen",
  "wasm-bindgen-test",
- "winter-crypto 0.6.2",
- "winter-math 0.6.2",
- "winter-utils 0.6.2",
+ "winter-crypto",
+ "winter-math",
+ "winter-utils",
 ]
 
 [[package]]
@@ -235,11 +235,6 @@ dependencies = [
  "digest",
  "keccak",
 ]
-
-[[package]]
-name = "sp-std"
-version = "4.0.0-dev"
-source = "git+https://github.com/zCloak-Network/substrate#6699fccb942eb61734dfdbc9b970dd8784d455ab"
 
 [[package]]
 name = "sp-std"
@@ -383,34 +378,25 @@ dependencies = [
 
 [[package]]
 name = "winter-crypto"
-version = "0.4.0"
-dependencies = [
- "blake3",
- "serde",
- "sha3",
- "winter-math 0.4.0",
- "winter-utils 0.4.0",
-]
-
-[[package]]
-name = "winter-crypto"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9b8e5f1652641d2febd5eafb0d0bbc5b70825daac82f1be1c1a2eca3656f7679"
 dependencies = [
  "blake3",
  "sha3",
- "winter-math 0.6.2",
- "winter-utils 0.6.2",
+ "winter-math",
+ "winter-utils",
 ]
 
 [[package]]
-name = "winter-math"
+name = "winter-crypto-04"
 version = "0.4.0"
 dependencies = [
+ "blake3",
  "serde",
- "serde_json",
- "winter-utils 0.4.0",
+ "sha3",
+ "winter-math-04",
+ "winter-utils-04",
 ]
 
 [[package]]
@@ -419,15 +405,24 @@ version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "820dcf1695fb6f63abd67d5ecc529ac97db44dba539611be707a85e13739abac"
 dependencies = [
- "winter-utils 0.6.2",
+ "winter-utils",
 ]
 
 [[package]]
-name = "winter-utils"
+name = "winter-math-04"
 version = "0.4.0"
+dependencies = [
+ "serde",
+ "serde_json",
+ "winter-utils-04",
+]
 
 [[package]]
 name = "winter-utils"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "08bee31f43e1dfbba3428f77fa110096af386b77cfb790ccee1b084fc093fd7c"
+
+[[package]]
+name = "winter-utils-04"
+version = "0.4.0"

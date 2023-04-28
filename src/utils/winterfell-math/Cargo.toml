@@ -1,5 +1,5 @@
 [package]
-name = "winter-math"
+name = "winter-math-04"
 version = "0.4.0"
 description = "Math library for the Winterfell STARK prover/verifier"
 authors = ["winterfell contributors"]
@@ -22,7 +22,7 @@ default = ["std"]
 std = ["utils/std"]
 
 [dependencies]
-utils = { version = "0.4", path = "../winterfell-utils/utils/core", package = "winter-utils", default-features = false }
+utils = { version = "0.4", path = "../winterfell-utils/utils/core", package = "winter-utils-04", default-features = false }
 serde = { version = "1.0", default-features = false, features = ["derive"] }
 serde_json = "1.0.0"
 
@@ -30,7 +30,7 @@ serde_json = "1.0.0"
 criterion = "0.3"
 num-bigint = "0.4"
 proptest = "1.0"
-rand-utils = { version = "0.4", path = "../winterfell-utils/utils/rand", package = "winter-rand-utils" }
+rand-utils = { version = "0.4", path = "../winterfell-utils/utils/rand", package = "winter-rand-utils-04" }
 serde = { version = "1.0", default-features = false, features = ["derive"] }
 serde_json = "1.0.0"
 

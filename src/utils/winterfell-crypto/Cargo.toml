@@ -1,5 +1,5 @@
 [package]
-name = "winter-crypto"
+name = "winter-crypto-04"
 version = "0.4.0"
 description = "Cryptographic library for the Winterfell STARK prover/verifier"
 authors = ["winterfell contributors"]
@@ -31,12 +31,12 @@ std = ["blake3/std", "math/std", "sha3/std", "utils/std"]
 
 [dependencies]
 blake3 = { version = "1.0", default-features = false }
-math = { version = "0.4", path = "../winterfell-math",package= "winter-math", default-features = false }
+math = { version = "0.4", path = "../winterfell-math",package= "winter-math-04", default-features = false }
 sha3 = { version = "0.10", default-features = false }
-utils = { version = "0.4", path = "../winterfell-utils/utils/core",package="winter-utils",  default-features = false }
+utils = { version = "0.4", path = "../winterfell-utils/utils/core",package="winter-utils-04",  default-features = false }
 serde = { version = "1.0", default-features = false, features = ["derive"] }
 
 [dev-dependencies]
 criterion = "0.3"
 proptest = "1.0"
-rand-utils = { version = "0.4", path = "../winterfell-utils/utils/rand",package="winter-rand-utils" }
+rand-utils = { version = "0.4", path = "../winterfell-utils/utils/rand",package="winter-rand-utils-04" }
